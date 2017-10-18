@@ -1,0 +1,88 @@
+body {
+  color: white;
+}
+
+header {
+  background-color: rebeccapurple;
+  /*
+   * overflow: auto;
+   *  - fixes the weirdness that happens when you float things
+   *  - must be ON THE PARENT
+   */
+  overflow: auto;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  /*
+   * float nav right so that it's on the opposite corner
+   */
+  float: right;
+  padding: 20px;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+div {
+  width: 800px;
+  /*
+   * margin: 0 auto;
+   *  - center a smaller tag within a bigger tag
+   *  - smaller tag is "div" (800px), bigger tag is "body" (full width)
+   */
+  margin: 25px auto;
+  background-color: #444;
+  /*
+   * overflow: auto;
+   *  - fixes the weirdness that happens when you float things
+   *  - must be ON THE PARENT
+   */
+  overflow: auto;
+}
+
+main {
+  /*
+   * set width in % and box-sizing to not worry about the math
+   */
+  box-sizing: border-box;
+  width: 75%;
+  /*
+   * float: left;
+   *  - stack this box up to the left like sideways Tetris
+   *  - causes weirdness in the tags that come after
+   */
+  float: left;
+  border: 5px solid deeppink;
+}
+
+aside {
+  /*
+   * set width in % and box-sizing to not worry about the math
+   */
+  box-sizing: border-box;
+  width: 25%;
+  /*
+   * float: left;
+   *  - stack this box up to the left like sideways Tetris
+   *  - causes weirdness in the tags that come after
+   */
+  float: left;
+  border: 5px solid orange;
+}
+
+footer {
+  padding: 10px;
+  /*
+   * text-align: center;
+   *  - center inline elements & text
+   */
+  text-align: center;
+  background-color: black;
+}
